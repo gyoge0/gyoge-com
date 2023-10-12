@@ -1,0 +1,7 @@
+{
+  "*.{js,ts,svelte}": [
+    "prettier --ignore-unknown --plugin prettier-plugin-svelte --write",
+    "eslint --fix"
+  ],
+  "!*.{js,ts,svelte}": "prettier --ignore-unknown --write"
+}
