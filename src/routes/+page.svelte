@@ -66,7 +66,7 @@
         align-items: center;
         width: 100%;
         height: 100%;
-        background-color: #22211f;
+        background-color: var(--main-background-color);
         font-family: sans-serif;
         padding: 5%;
         gap: 2rem;
