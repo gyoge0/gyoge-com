@@ -2,7 +2,7 @@
     import Signature from "$lib/components/Signature.svelte";
     import { onMount } from "svelte";
     // noinspection TypeScriptCheckImport
-    import IconEmailOutline from "virtual:icons/mdi/email-outline?raw&width=3rem&height=3rem";
+    import IconEmailOutline from "virtual:icons/mdi/email-outline?raw&width=3em&height=3rem";
     // noinspection TypeScriptCheckImport
     import IconGithub from "virtual:icons/mdi/github?raw&width=3rem&height=3rem";
     import { fly } from "svelte/transition";
@@ -36,7 +36,8 @@
 
 <style>
     div {
-        width: 50%;
+        width: 100%;
+        max-width: 1000px;
     }
 
     ol {
@@ -46,6 +47,7 @@
         align-items: center;
         gap: 1rem;
         color: #d1e3e1;
+        padding: 0;
     }
 
     li,
@@ -66,6 +68,7 @@
         height: 100%;
         background-color: #22211f;
         font-family: sans-serif;
+        padding: 5%;
         gap: 2rem;
     }
 </style>
