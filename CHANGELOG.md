@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/gyoge0/gyoge-com/compare/v1.0.1...v1.0.2) (2023-10-13)
+
+
+### Bug Fixes
+
+* fix mobile sizing issues ([#7](https://github.com/gyoge0/gyoge-com/issues/7)) ([b2dfadf](https://github.com/gyoge0/gyoge-com/commit/b2dfadfa60f2e850faeaecce7ef19d0a74f7bb1d))
+
 ## [1.0.1](https://github.com/gyoge0/gyoge-com/compare/v1.0.0...v1.0.1) (2023-10-13)
 
 
