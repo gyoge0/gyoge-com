@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/gyoge0/gyoge-com/compare/v1.0.2...v1.0.3) (2023-10-13)
+
+
+### Bug Fixes
+
+* remove white bars when pinching out on mobile ([#9](https://github.com/gyoge0/gyoge-com/issues/9)) ([49fb33d](https://github.com/gyoge0/gyoge-com/commit/49fb33d70d623ac08a14ab522a83175842615fe1))
+
 ## [1.0.2](https://github.com/gyoge0/gyoge-com/compare/v1.0.1...v1.0.2) (2023-10-13)
 
 
