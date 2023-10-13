@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/gyoge0/gyoge-com/compare/v1.0.0...v1.0.1) (2023-10-13)
+
+
+### Bug Fixes
+
+* **favicon:** remove default svelte favicon ([1db7ad6](https://github.com/gyoge0/gyoge-com/commit/1db7ad673a29405def9be15368681c98bfad16e3))
+
 ## 1.0.0 (2023-10-13)
 
 
