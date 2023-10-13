@@ -27,7 +27,6 @@ jobs:
                   release-type: node
 
                   package-name: release-please-action
-                  bump-minor-pre-major: true
 
     build-site:
         name: Build site
