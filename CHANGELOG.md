@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/gyoge0/gyoge-com/compare/v1.0.3...v1.1.0) (2023-11-02)
+
+
+### Features
+
+* add instagram link ([1f09621](https://github.com/gyoge0/gyoge-com/commit/1f096218d8f80fdbf68dae72f6c9c567d959497d))
+
 ## [1.0.3](https://github.com/gyoge0/gyoge-com/compare/v1.0.2...v1.0.3) (2023-10-13)
 
 
