@@ -5,6 +5,8 @@
     import IconEmailOutline from "virtual:icons/mdi/email-outline?raw&width=3em&height=3rem";
     // noinspection TypeScriptCheckImport
     import IconGithub from "virtual:icons/mdi/github?raw&width=3rem&height=3rem";
+    // noinspection TypeScriptCheckImport
+    import IconInstagram from "virtual:icons/mdi/instagram?raw&width=3rem&height=3rem";
     import { fly } from "svelte/transition";
 
     // svelte animations need a trigger to start
@@ -25,6 +27,11 @@
                 </a>
             </li>
             <li in:fly={{ y: 200, duration: 300, delay: 3200 }}>
+                <a href="https://www.instagram.com/gyoge0/">
+                    {@html IconInstagram}
+                </a>
+            </li>
+            <li in:fly={{ y: 200, duration: 300, delay: 3300 }}>
                 <a href="mailto:yogesh@gyoge.com">
                     {@html IconEmailOutline}
                 </a>
