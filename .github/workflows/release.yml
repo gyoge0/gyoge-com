@@ -25,7 +25,6 @@ jobs:
               id: release-please
               with:
                   release-type: node
-
                   package-name: release-please-action
 
     build-site:
