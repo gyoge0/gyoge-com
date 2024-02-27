@@ -7,6 +7,7 @@
     import IconGithub from "virtual:icons/mdi/github?raw&width=3rem&height=3rem";
     // noinspection TypeScriptCheckImport
     import IconInstagram from "virtual:icons/mdi/instagram?raw&width=3rem&height=3rem";
+    import Icon from "$lib/components/Icon.svelte";
 
     // svelte animations need a trigger to start
     let start = false;
@@ -20,21 +21,15 @@
     {#if start}
         <ol>
             <!-- eslint-disable svelte/no-at-html-tags -->
-            <li style="animation-delay: 3100ms">
-                <a href="https://github.com/gyoge0/">
-                    {@html IconGithub}
-                </a>
-            </li>
-            <li style="animation-delay: 3200ms">
-                <a href="https://www.instagram.com/gyoge0/">
-                    {@html IconInstagram}
-                </a>
-            </li>
-            <li style="animation-delay: 3300ms">
-                <a href="mailto:yogesh@gyoge.com">
-                    {@html IconEmailOutline}
-                </a>
-            </li>
+            <Icon href="https://github.com/gyoge0/" --delay="3100ms">
+                {@html IconGithub}
+            </Icon>
+            <Icon href="https://www.instagram.com/gyoge0/" --delay="3200ms">
+                {@html IconInstagram}
+            </Icon>
+            <Icon href="mailto:yogesh@gyoge.com" --delay="3300ms">
+                {@html IconEmailOutline}
+            </Icon>
             <!-- eslint-enable svelte/no-at-html-tags -->
         </ol>
     {/if}
@@ -54,34 +49,6 @@
         gap: 1rem;
         color: var(--cyan-0);
         padding: 0;
-    }
-
-    li,
-    a {
-        all: unset;
-    }
-
-    li {
-        opacity: 0;
-        animation-name: fly-in;
-        animation-duration: 200ms;
-        animation-fill-mode: forwards;
-        animation-timing-function: var(--ease-out-5);
-    }
-
-    @keyframes fly-in {
-        from {
-            opacity: 0;
-            transform: translateY(200px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    a:hover {
-        cursor: pointer;
     }
 
     main {
