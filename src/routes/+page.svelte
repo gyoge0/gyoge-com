@@ -1,6 +1,5 @@
 <script lang="ts">
     import Signature from "$lib/components/Signature.svelte";
-    import { onMount } from "svelte";
     // noinspection TypeScriptCheckImport
     import IconEmailOutline from "virtual:icons/mdi/email-outline?raw&width=3em&height=3rem";
     // noinspection TypeScriptCheckImport
@@ -8,31 +7,25 @@
     // noinspection TypeScriptCheckImport
     import IconInstagram from "virtual:icons/mdi/instagram?raw&width=3rem&height=3rem";
     import Icon from "$lib/components/Icon.svelte";
-
-    // svelte animations need a trigger to start
-    let start = false;
-    onMount(() => (start = true));
 </script>
 
 <main>
-    <div class="animated" id="wrapper">
+    <div>
         <Signature />
     </div>
-    {#if start}
-        <ol>
-            <!-- eslint-disable svelte/no-at-html-tags -->
-            <Icon href="https://github.com/gyoge0/" --delay="3100ms">
-                {@html IconGithub}
-            </Icon>
-            <Icon href="https://www.instagram.com/gyoge0/" --delay="3200ms">
-                {@html IconInstagram}
-            </Icon>
-            <Icon href="mailto:yogesh@gyoge.com" --delay="3300ms">
-                {@html IconEmailOutline}
-            </Icon>
-            <!-- eslint-enable svelte/no-at-html-tags -->
-        </ol>
-    {/if}
+    <div id="icon-container">
+        <!-- eslint-disable svelte/no-at-html-tags -->
+        <Icon href="https://github.com/gyoge0/" --delay="3100ms">
+            {@html IconGithub}
+        </Icon>
+        <Icon href="https://www.instagram.com/gyoge0/" --delay="3200ms">
+            {@html IconInstagram}
+        </Icon>
+        <Icon href="mailto:yogesh@gyoge.com" --delay="3300ms">
+            {@html IconEmailOutline}
+        </Icon>
+        <!-- eslint-enable svelte/no-at-html-tags -->
+    </div>
 </main>
 
 <style>
@@ -41,7 +34,7 @@
         max-width: 1000px;
     }
 
-    ol {
+    #icon-container {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
