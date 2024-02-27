@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/gyoge0/gyoge-com/compare/v1.2.1...v1.2.2) (2024-02-27)
+
+
+### Bug Fixes
+
+* replace list items with spans ([16ed622](https://github.com/gyoge0/gyoge-com/commit/16ed6225e9f068ef4225472eb8f3c3d182b554b1))
+
 ## [1.2.1](https://github.com/gyoge0/gyoge-com/compare/v1.2.0...v1.2.1) (2024-02-27)
 
 
