@@ -2,19 +2,19 @@
     export let href = "";
 </script>
 
-<li>
+<span>
     <a {href}>
         <slot />
     </a>
-</li>
+</span>
 
 <style>
-    li,
+    span,
     a {
         all: unset;
     }
 
-    li {
+    span {
         opacity: 0;
         animation-name: fly-in;
         animation-delay: var(--delay);
