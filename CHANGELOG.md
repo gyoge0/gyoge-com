@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/gyoge0/gyoge-com/compare/v1.2.0...v1.2.1) (2024-02-27)
+
+
+### Bug Fixes
+
+* remove old styling and js from before icon component and open props ([10ad305](https://github.com/gyoge0/gyoge-com/commit/10ad305f273f7d1c7d07c57c883b1e3f225a55c5))
+
 ## [1.2.0](https://github.com/gyoge0/gyoge-com/compare/v1.1.0...v1.2.0) (2024-02-27)
 
 
