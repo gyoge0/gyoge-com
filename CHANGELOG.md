@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/gyoge0/gyoge-com/compare/v1.1.0...v1.2.0) (2024-02-27)
+
+
+### Features
+
+* use open props and css animations ([eb92bd7](https://github.com/gyoge0/gyoge-com/commit/eb92bd7f2dfe96512b739b5ba92e119ccf721f36))
+
 ## [1.1.0](https://github.com/gyoge0/gyoge-com/compare/v1.0.3...v1.1.0) (2023-11-02)
 
 
