@@ -44,5 +44,9 @@
         "commitizen": {
             "path": "cz-conventional-changelog"
         }
+    },
+    "dependencies": {
+        "open-props": "^1.6.19",
+        "postcss-jit-props": "^1.0.14"
     }
 }
