@@ -1,16 +1,52 @@
 ---
-
+import IconLink from "@components/IconLink.astro";
+import Signature from "@components/Signature.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-  </body>
-</html>
+<BaseLayout>
+    <main>
+        <div>
+            <Signature />
+        </div>
+        <div id="icon-container">
+            <IconLink name="mdi:github" href="https://github.com/gyoge0/" delay="3100ms" />
+            <IconLink
+                name="mdi:instagram"
+                href="https://www.instagram.com/gyoge0/"
+                delay="3200ms"
+            />
+            <IconLink name="mdi:email-outline" href="mailto:yogesh@gyoge.com" delay="3300ms" />
+        </div>
+    </main>
+</BaseLayout>
+
+<style>
+    div {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    #icon-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+        color: #e3fafc;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 2rem;
+        background-color: #252521;
+        font-family: system-ui, sans-serif;
+    }
+</style>
