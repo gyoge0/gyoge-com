@@ -1,52 +1,32 @@
 {
-    "name": "gyoge-com",
-    "version": "1.2.2",
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite dev",
-        "build": "vite build",
-        "preview": "vite preview",
-        "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-        "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-        "lint": "prettier --plugin prettier-plugin-svelte --check . && eslint .",
-        "format": "prettier --plugin prettier-plugin-svelte --write .",
-        "prepare": "svelte-kit sync && husky install",
-        "cm": "cz",
-        "commitlint": "commitlint",
-        "commitlint:edit": "commitlint --edit"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^17.8.1",
-        "@commitlint/config-conventional": "^17.8.1",
-        "@iconify-json/material-symbols": "^1.1.61",
-        "@iconify-json/mdi": "^1.1.55",
-        "@sveltejs/adapter-static": "1.0.0-next.50",
-        "@sveltejs/kit": "^1.27.2",
-        "@typescript-eslint/eslint-plugin": "^6.9.1",
-        "@typescript-eslint/parser": "^6.9.1",
-        "commitizen": "^4.3.0",
-        "eslint": "^8.52.0",
-        "eslint-config-prettier": "^8.10.0",
-        "eslint-plugin-svelte": "^2.34.0",
-        "husky": "^8.0.3",
-        "lint-staged": "^14.0.1",
-        "prettier": "^3.0.3",
-        "prettier-plugin-svelte": "^3.0.3",
-        "svelte": "^4.2.2",
-        "svelte-check": "^3.5.2",
-        "tslib": "^2.6.2",
-        "typescript": "^5.2.2",
-        "unplugin-icons": "^0.17.3",
-        "vite": "^4.5.2"
-    },
-    "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
-        }
-    },
-    "dependencies": {
-        "open-props": "^1.6.19",
-        "postcss-jit-props": "^1.0.14"
-    }
+  "name": "gyoge-com",
+  "version": "1.2.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.15.6",
+    "typescript": "^5.6.2",
+    "@types/bun": "latest"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.3",
+    "@typescript-eslint/parser": "^8.5.0",
+    "eslint": "^9.10.0",
+    "eslint-plugin-astro": "^1.2.4",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-svelte": "^3.2.6"
+  },
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
 }
