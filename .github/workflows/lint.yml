@@ -1,0 +1,25 @@
+name: Lint code
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - uses: oven-sh/setup-bun@v2
+              with:
+                  bun-version: latest
+
+            - name: Install dev dependencies
+              run: bun install -D
+
+            - name: Run prettier and eslint
+              run: bun run lint
