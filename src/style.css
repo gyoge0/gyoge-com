@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+    --font-mono:
+        ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+        "DejaVu Sans Mono", monospace;
+    --font-serif:
+        "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+}

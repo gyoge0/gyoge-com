@@ -2,11 +2,63 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Yogesh Thambidurai</title>
+        <script type="module" src="/src/index.ts"></script>
     </head>
-    <body>
-        <div></div>
+    <body class="h-screen">
+        <main
+            class="flex h-full w-full flex-col items-start gap-5 bg-taupe-400 p-10 max-md:justify-start max-md:pt-48 md:justify-center"
+        >
+            <h1
+                class="font-serif max-sm:text-5xl sm:text-6xl md:text-7xl lg:text-9xl"
+            >
+                Yogesh Thambidurai
+            </h1>
+            <h2 class="font-serif max-md:text-xl md:text-3xl">
+                Computer Science at UVA
+            </h2>
+            <ul>
+                <li class="grid grid-cols-[8rem_1fr]">
+                    <span class="font-serif max-md:text-lg md:text-2xl">
+                        LinkedIn:
+                    </span>
+                    <span class="self-center">
+                        <a
+                            href="https://linkedin.com/in/yogesh-thambidurai"
+                            class="max-md:text-md relative inline-block font-mono text-blue-900 after:absolute after:right-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:text-blue-500 hover:after:w-full md:text-xl"
+                        >
+                            in/yogesh-thambidurai
+                        </a>
+                    </span>
+                </li>
+                <li class="grid grid-cols-[8rem_1fr]">
+                    <span class="font-serif max-md:text-lg md:text-2xl">
+                        GitHub:
+                    </span>
+                    <span class="self-center">
+                        <a
+                            href="https://github.com/gyoge0"
+                            class="max-md:text-md relative inline-block font-mono text-blue-900 after:absolute after:right-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:text-blue-500 hover:after:w-full md:text-xl"
+                        >
+                            gyoge0
+                        </a>
+                    </span>
+                </li>
+                <li class="grid grid-cols-[8rem_1fr]">
+                    <span class="font-serif max-md:text-lg md:text-2xl">
+                        Email:
+                    </span>
+                    <span class="self-center">
+                        <a
+                            href="mailto:yogesh@gyoge.com"
+                            class="max-md:text-md relative inline-block font-mono text-blue-900 after:absolute after:right-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:text-blue-500 hover:after:w-full md:text-xl"
+                        >
+                            yogesh@gyoge.com
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </main>
     </body>
 </html>
